@@ -19,29 +19,29 @@
         <!-- Divider -->
         <hr class="sidebar-divider my-0" />
 
-        <!-- Nav Item - Dashboard -->
-        <!-- 
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>대시보드</span></a>
-        </li>
-        -->
-        
+
+
         <li class="nav-item" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'active' : '' }">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Content</span>
-            </a>
-            <div id="collapse1" class="collapse" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'show' : '' }" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <!-- <h6 class="collapse-header">Custom Components:</h6> -->
-                    <a class="collapse-item" href="/user" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'active' : '' }">입고의뢰등록</a>
-                    <a class="collapse-item" href="/user_group" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/user_group') ? 'active' : '' }">사용자그룹관리</a>
-                    
-                </div>
-            </div>
+            <a class="nav-link" href="/admin/portfolio">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>포트폴리오</span></a>
         </li>
+
+        
+<!--        <li class="nav-item" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'active' : '' }">-->
+<!--            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">-->
+<!--                <i class="fas fa-fw fa-cog"></i>-->
+<!--                <span>포트폴리오</span>-->
+<!--            </a>-->
+<!--            <div id="collapse1" class="collapse" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'show' : '' }" aria-labelledby="headingTwo" data-parent="#accordionSidebar">-->
+<!--                <div class="bg-white py-2 collapse-inner rounded">-->
+<!--                    &lt;!&ndash; <h6 class="collapse-header">Custom Components:</h6> &ndash;&gt;-->
+<!--                    <a class="collapse-item" href="/user" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'active' : '' }">등록</a>-->
+<!--                    <a class="collapse-item" href="/user_group" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/user_group') ? 'active' : '' }">사용자그룹관리</a>-->
+<!--                    -->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </li>-->
         
         <li class="nav-item" th:classappend="${#strings.startsWith(#httpServletRequest.requestURI, '/foobar') ? 'active' : '' }">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target=#collapse2 aria-expanded="true" aria-controls="collapse2">
