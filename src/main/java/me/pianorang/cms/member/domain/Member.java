@@ -1,9 +1,18 @@
 package me.pianorang.cms.member.domain;
 
-public class Member {
-    String name;
-    String userId;
-    String userPwd;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter @Setter
+@ToString
+@AllArgsConstructor
+public class Member {
+    private Long id;
+
+    private String userId;
+
+    private String userPwd;
 
 }

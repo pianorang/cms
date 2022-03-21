@@ -1,15 +1,15 @@
 package me.pianorang.cms.member.adapter.out.persistence;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.Data;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name="MEMBER")
-public class MemberJpaEntity {
+@Data
+class MemberJpaEntity {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String userId;
