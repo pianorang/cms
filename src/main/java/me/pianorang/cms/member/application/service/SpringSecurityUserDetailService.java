@@ -33,7 +33,7 @@ public class SpringSecurityUserDetailService implements UserDetailsService {
             public Collection<? extends GrantedAuthority> getAuthorities() {
                 List<GrantedAuthority> authorities = new ArrayList<>();
 
-                if(member.getUserId().equals("admin")) {
+                if(member.getUserId().equals("cmsadmin")) {
                     authorities.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
                 }
                 else {
@@ -45,6 +45,7 @@ public class SpringSecurityUserDetailService implements UserDetailsService {
 
             @Override
             public String getPassword() {
+
                 return member.getUserPwd();
             }
 

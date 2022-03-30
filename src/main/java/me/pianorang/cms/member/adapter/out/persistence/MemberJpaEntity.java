@@ -5,7 +5,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Entity
-@Table(name="MEMBER")
+@Table(name="member")
 @Data
 class MemberJpaEntity {
     @Id
