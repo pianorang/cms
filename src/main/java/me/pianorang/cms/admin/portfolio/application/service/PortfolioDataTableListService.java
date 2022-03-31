@@ -14,13 +14,11 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 @Service
 class PortfolioDataTableListService implements PortfolioDataTableListQuery {
-    private final LoadPortfolioListPort loadPortfolioDataTableListPort;
+    private final LoadPortfolioListPort loadPortfolioListPort;
 
     @Override
     public DataTableOutput getDataTableList(DataTableInput dataTableInput) {
-        Page<Portfolio> portfolios = loadPortfolioDataTableListPort.loadPortfolioList(dataTableInput.getPageable());
-
-        log.info("!! {}", portfolios);
+        Page<Portfolio> portfolios = loadPortfolioListPort.loadPortfolioList(dataTableInput.getPageable());
         return new DataTableOutput(
                 dataTableInput.getDraw(),
                 portfolios.getTotalElements(),
