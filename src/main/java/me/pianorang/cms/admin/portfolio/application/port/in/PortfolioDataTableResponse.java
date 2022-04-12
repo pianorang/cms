@@ -1,12 +1,13 @@
-package me.pianorang.cms.admin.portfolio.domain;
+package me.pianorang.cms.admin.portfolio.application.port.in;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
-@Getter
-public class Portfolio {
+@Data
+public class PortfolioDataTableResponse {
     private Long id;
     private String title;
     private String content;
@@ -17,5 +18,4 @@ public class Portfolio {
     private String createdBy;
     private LocalDateTime modifiedOn;
     private String modifiedBy;
-
 }

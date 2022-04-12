@@ -15,6 +15,7 @@ public class LoginController {
 
     @GetMapping("/auth/login")
     String login(){
+        log.info("!!pwd: {}", passwordEncoder.encode("wjstjdgks"));
         return "member/login";
     }
 }

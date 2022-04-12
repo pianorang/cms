@@ -17,17 +17,16 @@
 
                     <div class="position-relative form-group">
                         <label for="title" class="">제목</label>
-                        <input name="title" id="title" placeholder="이름" type="text" class="form-control" th:value="${portfolio.title}" autocomplete="false">
-                        <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Name Error</span>
+                        <input name="title" id="title" placeholder="이름" type="text" class="form-control" autocomplete="false">
+
                     </div>
                     <div class="position-relative form-group">
                         <label for="title" class="">파일등록</label>
-                        <input name="title" id="title" placeholder="이름" type="text" class="form-control" th:value="${portfolio.title}" autocomplete="false">
-                        <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Name Error</span>
+                        <input name="title" id="title" placeholder="이름" type="text" class="form-control" autocomplete="false">
+
                     </div>
 
-                    <button th:with="text=${user['new']} ? '추가' : '수정'"
-                            class="mt-1 btn btn-primary" type="submit" th:text="${text}">
+                    <button class="mt-1 btn btn-primary" type="submit">
                        	 추가
                     </button>
                     <button type="button" onclick="location.href='/user'" class="mt-1 btn btn-secondary">목록</button>

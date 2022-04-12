@@ -1,12 +1,11 @@
 package me.pianorang.cms.admin.portfolio.adapter.in.web;
 
-import me.pianorang.cms.admin.common.AdminBaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@AdminBaseController
+@Controller
 public class PortfolioListController {
-    @GetMapping("/portfolio")
+    @GetMapping("/sys/portfolio")
     String list(){
         return "/admin/portfolio/portfolio_list";
     }
