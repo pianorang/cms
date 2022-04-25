@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @RestController
-public class ContentsUploadController {
+class ContentsUploadController {
 
     @PostMapping("/sys/upload")
     ResponseEntity<?> fileUpload(@RequestParam List<MultipartFile> files){

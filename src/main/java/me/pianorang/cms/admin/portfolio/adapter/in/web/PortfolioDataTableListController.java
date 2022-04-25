@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class PortfolioDataTableListController {
+class PortfolioDataTableListController {
 
     final private PortfolioDataTableListQuery portfolioDataTableListQuery;
 

@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ContentsListController {
+class ContentsListController {
     @GetMapping("/sys/contents")
     String list(){
         return "/admin/contents/contents_list";

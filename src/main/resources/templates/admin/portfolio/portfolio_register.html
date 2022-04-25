@@ -21,33 +21,23 @@
 
                     </div>
                     <div class="position-relative form-group">
-                        <label for="title" class="">파일등록</label>
-                        <input name="title" id="title" placeholder="이름" type="text" class="form-control" autocomplete="false">
+                        <label for="uploadFile" class="">파일등록</label>
+                        <input name="uploadFile" id="uploadFile" type="file" class="form-control">
 
                     </div>
 
                     <button class="mt-1 btn btn-primary" type="submit">
                        	 추가
                     </button>
-                    <button type="button" onclick="location.href='/user'" class="mt-1 btn btn-secondary">목록</button>
+                    <button type="button" onclick="location.href='./portfolio'" class="mt-1 btn btn-secondary">목록</button>
                 </form>
             </div>
         </div>
     </div>
     <script>
-    	$('#userForm').validate({
+    	$('#portfolioForm').validate({
     		rules: {
-    			userName: "required",
-    			"userId.custCode":{    				
-    				required: true, minlength:5, maxlength:5, number: true 
-    			} ,    			
-    			"userId.userId":{    				
-    				required: true, minlength:4, maxlength:8
-    			} ,    			
-    			userPassword: "required",
-    			userPasswordConfirm: {
-   			    	equalTo: "#userPassword"
-   			    }
+    			title: "required",
    			}
    		});    	
     	

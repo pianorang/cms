@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-public class ContentsDataTableListController {
+class ContentsDataTableListController {
     final private ContentsDataTableListQuery contentsDataTableListQuery;
 
     @GetMapping("/sys/api/contents")

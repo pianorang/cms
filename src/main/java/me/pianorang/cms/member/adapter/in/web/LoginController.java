@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Slf4j
 @Controller
-public class LoginController {
+class LoginController {
 
     @Autowired
     PasswordEncoder passwordEncoder;
